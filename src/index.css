@@ -1,0 +1,80 @@
+@import "tailwindcss";
+@tailwind utilities;
+
+.payment-option {
+    background-color: #ffffff;
+    border: 1px solid black;
+    font-weight: 600;
+    height: 40px;
+    width: 160px;
+    border-radius: 6px;
+    cursor: pointer;
+    /* bg-green-50 border border-black font-semibold h-10 w-40 rounded-md */
+}
+
+.calc-button {
+    background-color: #ffffff;
+    border: 1px solid black;
+    font-weight: 600;
+    height: 40px;
+    width: 100px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.misc-button {
+    cursor: pointer;
+    width: 92px;
+}
+
+.payment-option:hover,
+.calc-button:hover,
+.misc-button:hover {
+    background-color: #dad9d9;
+}
+
+.delete,
+.void {
+    background-color: rgb(246, 44, 44);
+}
+
+.tax {
+    background-color: rgb(71, 71, 232);
+}
+
+.disc {
+    background-color: yellow;
+}
+
+.hold {
+    background-color: orange;
+}
+
+/* .Transparent scrollbar track
+*/
+.transparent-track::-webkit-scrollbar {
+    width: 8px;
+}
+
+.transparent-track::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.transparent-track::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 20px;
+}
+
+.transparent-track:hover::-webkit-scrollbar-thumb {
+    background-color: rgba(156, 163, 175, 0.7);
+}
+
+/* Firefox */
+.transparent-track {
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+}
+
+.transparent-track:hover {
+    scrollbar-color: rgba(156, 163, 175, 0.7) transparent;
+}
